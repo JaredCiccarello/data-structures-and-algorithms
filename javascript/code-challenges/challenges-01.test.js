@@ -10,6 +10,10 @@ Use `forEach` to loop over the input array and work with each value.  Push the n
 
 const addOne = (arr) => {
   // Solution code here...
+  arr.forEach((element, index) => {
+    arr[index] = element + 1;
+  });
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -22,6 +26,7 @@ Use `forEach` to loop over the input array. Modify each string, and add the upda
 
 const addExclamation = (arr) => {
   // Solution code here...
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
