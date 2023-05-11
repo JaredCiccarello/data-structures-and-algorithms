@@ -10,6 +10,10 @@ Use `forEach` to loop over the input array and work with each value.  Push the n
 
 const addOne = (arr) => {
   // Solution code here...
+  arr.forEach((element, index) => {
+    arr[index] = element + 1;
+  });
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -20,8 +24,16 @@ Write a function named `addExclamation` that takes an array of strings, and retu
 Use `forEach` to loop over the input array. Modify each string, and add the updated value into a local array. Return the local array;
 ------------------------------------------------------------------------------------------------ */
 
+// const addExclamation = (arr) => {
+//   // Solution code here...
+
+// };
+
 const addExclamation = (arr) => {
-  // Solution code here...
+  arr.forEach((string, index) => {
+    arr[index] = string + '!';
+  });
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -32,8 +44,15 @@ Write a function named `allUpperCase` that takes an array of strings, and return
 Use `forEach` to loop over the input array. The modified strings should each be added into a local array. Return that local array.
 ------------------------------------------------------------------------------------------------ */
 
+// const allUpperCase = (arr) => {
+//   // Solution code here...
+// };
+
 const allUpperCase = (arr) => {
-  // Solution code here...
+  arr.forEach((string, index) => {
+    arr[index] = string.toUpperCase();
+  });
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -46,13 +65,34 @@ Then, write a function named `speaker` that takes in an array of strings and a c
 Use `forEach` to build a new array of strings, each string modified by the callback. Return the new array.
 ------------------------------------------------------------------------------------------------ */
 
+// const greeting = (word) => {
+//   // Solution code here...
+// };
+
+// const speaker = (words, callback) => {
+//   // Solution code here...
+// };
+
 const greeting = (word) => {
-  // Solution code here...
+  // word.forEach((string, index) => {
+  // word[index] = string.toUpperCase() + '!';
+  word = word.toUpperCase() + '!';
+
+  // });
+  return word;
 };
 
 const speaker = (words, callback) => {
-  // Solution code here...
+  let newArr = [];
+  words.forEach((word) => {
+    // words[index] = string.toUpperCase() + '!';
+    newArr.push(callback(word));
+
+
+  });
+  return newArr;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -70,13 +110,28 @@ Within the addNumbers function, invoke the callback function as many times as ne
 Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
+// const addValues = (arr, value) => {
+//   // Solution code here...
+// };
+
+// const addNumbers = (num, arr, times, callback) => {
+//   // Solution code here...
+// };
+
 const addValues = (arr, value) => {
   // Solution code here...
+  arr.push(value);
+
 };
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
+  for (let i = 0; i < times; i++) {
+    callback(arr, num);
+  }
+  return arr;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 
@@ -96,8 +151,20 @@ The inventory is formatted like this:
 This function should use forEach to populate your grocery list based on the store's inventory. If the item is available, add it to your list. Return the final list.
 ------------------------------------------------------------------------------------------------ */
 
+// const createList = (availableItems) => {
+//   // Solution code here...
+// };
+
 const createList = (availableItems) => {
   // Solution code here...
+  let arrTOReturn = [];
+  availableItems.forEach((item) => {
+    if (item.available) {
+      arrTOReturn.push(item.name);
+    }
+  });
+  return arrTOReturn;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -117,6 +184,8 @@ Return the resulting output array.
 const fizzbuzz = (arr) => {
   // Solution code here...
 };
+
+
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
