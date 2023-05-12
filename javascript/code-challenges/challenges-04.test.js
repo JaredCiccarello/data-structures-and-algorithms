@@ -93,7 +93,13 @@ HINT: Do it with a custom sort callback, not with using `.reverse()`. ;)
 
 const sortBackwards = (arr) => {
   // Solution code here...
+  arr.sort((a, b) => b - a);
+  return arr;
 };
+
+// const sortBackwards = (arr) => {
+//   // Solution code here...
+// };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -105,8 +111,16 @@ In this alphabetization, capital letters come before lower case letters.
 For example, ['Alphabet', 'Zebra', 'alphabet', 'carrot'] is correctly sorted.
 ------------------------------------------------------------------------------------------------ */
 
+// const alphabetize = (arr) => {
+//   // Solution code here...
+// };
+
 const alphabetize = (arr) => {
   // Solution code here...
+  const alphabetize = (arr) => {
+    arr.sort();
+    return arr;
+  };
 };
 
 /* ------------------------------------------------------------------------------------------------
