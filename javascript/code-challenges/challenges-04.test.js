@@ -93,7 +93,13 @@ HINT: Do it with a custom sort callback, not with using `.reverse()`. ;)
 
 const sortBackwards = (arr) => {
   // Solution code here...
+  arr.sort((a, b) => b - a);
+  return arr;
 };
+
+// const sortBackwards = (arr) => {
+//   // Solution code here...
+// };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -105,8 +111,14 @@ In this alphabetization, capital letters come before lower case letters.
 For example, ['Alphabet', 'Zebra', 'alphabet', 'carrot'] is correctly sorted.
 ------------------------------------------------------------------------------------------------ */
 
+// const alphabetize = (arr) => {
+//   // Solution code here...
+// };
+
 const alphabetize = (arr) => {
   // Solution code here...
+  arr.sort();
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -122,8 +134,19 @@ Here is an example of the input:
 ];
 ------------------------------------------------------------------------------------------------ */
 
+// const sortByPrice = (arr) => {
+//   // Solution code here...
+// };
+
+
 const sortByPrice = (arr) => {
   // Solution code here...
+  //  Sort the array
+  // no need for let newArr =
+  arr.sort((a,b) => a.price - b.price);
+// Because this returns a positive number, then this sorts to the right.
+// If this returns a negative number, then it sorts to the left.
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
