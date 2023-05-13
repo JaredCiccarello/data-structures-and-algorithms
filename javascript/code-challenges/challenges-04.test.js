@@ -117,10 +117,8 @@ For example, ['Alphabet', 'Zebra', 'alphabet', 'carrot'] is correctly sorted.
 
 const alphabetize = (arr) => {
   // Solution code here...
-  const alphabetize = (arr) => {
-    arr.sort();
-    return arr;
-  };
+  arr.sort();
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -145,7 +143,7 @@ const sortByPrice = (arr) => {
   // Solution code here...
   //  Sort the array
   // no need for let newArr =
-  arr.sort(a,b) => a.price - b.price
+  arr.sort((a,b) => a.price - b.price);
 // Because this returns a positive number, then this sorts to the right.
 // If this returns a negative number, then it sorts to the left.
   return arr;
