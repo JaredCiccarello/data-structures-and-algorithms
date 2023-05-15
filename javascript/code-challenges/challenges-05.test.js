@@ -125,6 +125,13 @@ const returnNames = (arr) => {
   }, []);
 };
 
+// Very first parameter it takes CALLBACK => {}
+// Callback function takes in arguments
+// return arr.reduce({nameArr, currentChar) => {
+  // nameArr.push();
+  // return.nameArr;
+// }
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
