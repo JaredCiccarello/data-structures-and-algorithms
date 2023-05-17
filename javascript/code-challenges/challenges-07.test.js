@@ -137,6 +137,16 @@ const gruffaloCrumble = {
 const listFoods = (recipe) => {
   let result = [];
   // Solution code here...
+  recipe.ingredients.forEach((ingred) => {
+    let withoutAmount = ingred.slice(ingred.indexOf(' ') + 1);
+    let withoutUnit = withoutAmount.slice(withoutAmount.indexOf(' ') + 1);
+    result.push(withoutUnit);
+
+    // OR
+
+    // let onlyIngred = ingred.slice(ingred.indexOf(' ', 3) + 1);
+    // result.push(onlyIngred);
+  });
   return result;
 };
 
