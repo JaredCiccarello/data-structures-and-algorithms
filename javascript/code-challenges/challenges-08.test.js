@@ -121,6 +121,9 @@ const isCapitalized = (str) => {
   return str.match(pattern) || [];
 };
 
+
+// We want the words that contain a capital letter. 
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
