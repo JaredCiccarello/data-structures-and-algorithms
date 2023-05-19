@@ -161,6 +161,18 @@ const getHouses = (arr) => {
   return arr.map((character) => character.house);
 };
 
+// Sheyna Watkins
+// const getHouses = (arr) => {
+//   let houses = [];
+//   // Solution code here...
+//   arr.forEach((person) => {
+// houses.push(person.houses)
+//   });
+//   return houses;
+// };
+
+
+
 /*------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
@@ -187,7 +199,28 @@ const hasChildrenValues = (arr, character) => {
   }
   return false;
 };
- 
+
+// Sheyna Watkins
+const hasChildrenValues = (arr, character) => {
+  // Solution code here...
+
+  // step: var for number of kids
+  let kids = 0;
+  // Find out how many kids = and reassign kids to that number:
+  arr.forEach(person => {
+    if (person.name ==== character) {
+      Object.keys(person).forEach((key, idx)) => {
+        if (key === 'children') {
+          
+        }
+        Object.values(person);
+      }
+    }
+  })
+  }
+  return kids ? true : false;
+};
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
 
