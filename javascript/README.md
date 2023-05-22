@@ -1,5 +1,10 @@
 # Data Structures and Algorithms
 
+Collaborators:
+Anthony Sinitsa
+Dan Quinn
+
+
 ## Language: `JavaScript`
 
 ### Folder and Challenge Setup
