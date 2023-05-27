@@ -36,8 +36,8 @@ If the word is between 5 and 10 characters long, return true. Otherwise, return 
 
 const validateWord = (word) => {
   // Solution code here...
-  const regex = /^\.{5,10}$/;
-  return regex.test(word);
+  const wordRegex = /^[a-zA-Z]{5,10}$/;
+  return wordRegex.test(word);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -101,9 +101,8 @@ Return either true or false.
 
 const validatePhoneNumber = (phoneNumber) => {
   // Solution code here...
-  const pattern = /^(\(\d{3}\)|\d{3})([\s-]?\d{3}){2}([\s-]?\d{4})$/;
-
-  return pattern.test(phoneNumber);
+  const phoneRegex = /^(\(\d{3}\)|\d{3})( |-)?\d{3}( |-)?\d{4}$/;
+  return phoneRegex.test(phoneNumber);
 };
 
 /* ------------------------------------------------------------------------------------------------
