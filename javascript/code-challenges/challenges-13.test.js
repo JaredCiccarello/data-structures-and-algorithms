@@ -8,15 +8,17 @@ Write a function named longestString that takes in an array of strings and retur
 
 const longestString = (arr) => {
   // Solution code here...
+  if (arr.length === 0) {
+    return -1; // Return -1 if the array is empty
+  }
+
   let longestIndex = 0;
-  let longestLength = arr[0].length;
+  let maxLength = arr[0].length;
 
   for (let i = 1; i < arr.length; i++) {
-    const currentLength = arr[i].length;
-
-    if (currentLength > longestLength) {
+    if (arr[i].length > maxLength) {
       longestIndex = i;
-      longestLength = currentLength;
+      maxLength = arr[i].length;
     }
   }
 
