@@ -104,16 +104,15 @@ let starWarsData = [{
 
 let biggerThanLuke = (arr) => {
   // Solution code here...
-  // Get Luke Skywalker's mass
-  const lukeMass = parseInt(arr.find(character => character.name === 'Luke Skywalker').mass);
-
-  // Create a new array that contains all the characters whose mass is greater than Luke's mass
-  const names = arr
-    .filter(character => parseInt(character.mass) > lukeMass)
-    .map(character => character.name);
-
-  // Here is where we Join the names in the new array with a hyphen and return the resulting string
-  return names.join(' ', ' - ');
+  const luke = arr.find(char => char.name = 'Luke Skywalker');
+  return arr
+    .filter(char => parseInt(char.mass) > parseInt(luke.mass))
+    .reduce((str, currentChar, i, arr) => {
+      i === arr.length - 1
+        ? str += currentChar.name
+        : str += currentChar.name + ' - ';
+      return str;
+    }, '');
 };
 
 /* ------------------------------------------------------------------------------------------------
