@@ -8,7 +8,7 @@ Code Challenge: Class 03
 
 ## Whiteboard Process
 Image
-
+![CodeChallenge03](<code challenge 03.png>)
 ## Approach & Efficiency
 Iterate over the array and cut the array in half, determining if the key is larger or smaller than the specific index.
 

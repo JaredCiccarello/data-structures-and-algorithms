@@ -7,7 +7,7 @@ Daniel Quinn
 Code Challenge: Class 02
 
 ## Whiteboard Process
-
+![CodeChallenge02](CodeChallenge02.png)
 
 ## Approach & Efficiency
 Taking the array and moving a new integer to the center of the arrray.

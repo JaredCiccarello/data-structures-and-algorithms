@@ -38,6 +38,8 @@ Collaborators
 Ashley Taylor
 Anthony Sinitsa
 Daniel Quinn
+Logan Reese
+Slava Makeev
 
 # Challenge Title
 Code Challenge: Class 01
