@@ -3,6 +3,22 @@
 ## Language: `Python`
 
 
+# Challenge Title
+Code Challenge: Class 05: Linked List Implementation
+
+## Whiteboard Process
+No white board
+
+## Approach & Efficiency
+Checked the testing to see what was needed and checked for errors to see what needed to be changed.
+
+## Solution
+
+
+Collaborators
+Daniel Quinn
+Sarah Glass
+Anthony Sinitsa
 
 
 
