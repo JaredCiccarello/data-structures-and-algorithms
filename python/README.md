@@ -3,30 +3,8 @@
 ## Language: `Python`
 
 
-# Challenge Title
-Code Challenge: Class 05: Linked List Implementation
 
-## Whiteboard Process
-No white board
-
-## Approach & Efficiency
-Checked the testing to see what was needed and checked for errors to see what needed to be changed.
-
-## Solution
-
-
-Collaborators
-Daniel Quinn
-Sarah Glass
-Anthony Sinitsa
-
-
-
-
-
-
-
-
+TABLE OF CONTENTS:
 
 ### Folder and Challenge Setup
 
@@ -102,6 +80,3 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - **Run in watch mode** - `ptw` or `pytest-watch`
 
 
-## [CodeChallenge02](401CodeChallenge/CodeChallenge02/README.md)
-
-## [CodeChallenge03](401CodeChallenge/CodeChallenge03/README.md)
