@@ -13,4 +13,4 @@ Code Challenge: Class 02
 Taking the array and moving a new integer to the center of the arrray.
 
 ## Solution
-Taking numbers like [4, 3, 2, 1], 5 and then adding 5 to the center
+Taking numbers like [4, 3, 2, 1], 5 and then adding 5 to the center.

@@ -6,7 +6,6 @@ class Node:
 class LinkedList:
     """
     Put docstring here
-    No I won't do that
     """
     def __init__(self, head=None, values=None, insert=None):
         self.head = None
