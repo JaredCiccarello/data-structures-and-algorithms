@@ -1,22 +1,15 @@
-# Data Structures and Algorithms
+TABLE OF CONTENTS:
 
-# Challenge Title
-<!-- Description of the challenge -->
 
-## Whiteboard Process
-<!-- Embedded whiteboard image -->
-
-## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-
-## Solution
-<!-- Show how to run your code, and examples of it in action -->
-
+## [CodeChallenge01](python/401CodeChallenge/CodeChallenge01)
+## [CodeChallenge02](python/401CodeChallenge/CodeChallenge02)
+## [CodeChallenge03](python/401CodeChallenge/CodeChallenge03)
+## [CodeChallenge06](python/401CodeChallenge/CodeChallenge06/README.md)
 
 Collaborators
-Ashley Taylor
-Sarah Glass
+Anthony Sinitsa
 Daniel Quinn
+
 
 # Challenge Title
 Code Challenge: Class 02
