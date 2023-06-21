@@ -80,6 +80,6 @@ def test_kth_from_end_size_two_2():
     assert actual == expected
 
 # class TargetError
-# cd into code_challenges
+# cd into tests->code_challenges
 # pytest test_linked_list_kth.py
 
