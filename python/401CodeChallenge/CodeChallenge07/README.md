@@ -12,7 +12,8 @@ Image
 ![CodeChallenge07](<python/401CodeChallenge/CodeChallenge07/Screenshot 2023-06-21 172727.png>)
 
 ## Approach & Efficiency
-Iterate over the array and cut the array in half, determining if the key is larger or smaller than the specific index.
+Time: o(n)
+Space: o(1)
 
 ## Solution
-
+run pytest test_linked_list_kth.py
