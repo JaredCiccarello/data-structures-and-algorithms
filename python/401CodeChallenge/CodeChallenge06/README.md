@@ -5,7 +5,7 @@ Daniel Quinn
 Andrew Carroll
 
 # Challenge Title
-Code Challenge: Class 03
+Code Challenge: Class 06
 
 ## Whiteboard Process
 Image
