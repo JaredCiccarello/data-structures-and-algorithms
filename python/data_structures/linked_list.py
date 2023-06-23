@@ -66,16 +66,16 @@ class LinkedList:
 
 
     def __str__(self):
-      if self.head == None:
-        return "NULL"
+      if self.head is None:
+          return "NULL"
       else:
-        current = self.head
-      output = ""
-      while current:
-        output += f"{{ {current.value} }} -> "
-        current = current._next
-      output += "NULL"
-      return output
+          current = self.head
+          output = ""
+          while current:
+              output += f"{{ {current.value} }} -> "
+              current = current._next
+          output += "NULL"
+          return output
 
     def includes(self, value):
         current = self.head
@@ -108,6 +108,24 @@ class LinkedList:
             print(current.value)
             current = current._next
 
+
+    # space O(1) not adding anything additional, this would be a linear data structure
+
+    # def zip_lists(list1, list2):
+    #   current1 = list1.head
+    #   current2 = list2.head
+    #   if current1 == None:
+    #     return list2
+    #   if current2 == None:
+    #     return list1
+    #   while current1 and current2:
+    #     temp1 = current1._next
+    #     temp2 = current2._next
+    #     current1._next = current2
+    #     current2._next = temp1
+    #     current1 = temp1
+    #     current2 = temp2
+    #   return zip_lists
 
 # Putting in exception here fixes the error:
 #TypeError: expected exception must be a BaseException type, not TargetError
