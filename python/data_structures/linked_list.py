@@ -35,14 +35,14 @@ class LinkedList:
         current = self.head
         previous = None
         if current is None:
-            raise ValueError(f"Value {value} not found in linked list")
+            raise TargetError(f"Value {value} not found in linked list")
 
         while current is not None and current.value != value:
             previous = current
             current = current._next
 
         if current is None:
-            raise ValueError(f"Value {value} not found in linked list")
+            raise TargetError(f"Value {value} not found in linked list")
 
         newNode = Node(new_value)
         newNode._next = current
@@ -57,7 +57,7 @@ class LinkedList:
             current = current._next
 
         if current is None:
-            raise ValueError(f"Value {value} not found in linked list")
+            raise TargetError(f"Value {value} not found in linked list")
 
         newNode = Node(new_value)
         newNode._next = current._next
