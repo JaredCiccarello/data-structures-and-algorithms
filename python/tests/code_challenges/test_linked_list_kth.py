@@ -79,7 +79,13 @@ def test_kth_from_end_size_two_2():
     expected = "bananas"
     assert actual == expected
 
-# class TargetError
-# cd into tests->code_challenges
-# pytest test_linked_list_kth.py
 
+def test_target_error():
+  try:
+    raise TargetError("This specific error")
+  except TargetError as e:
+    print(f"Caught TargetErrorL {e}")
+
+# class TargetError
+# cd into  python->tests->code_challenges
+# pytest test_linked_list_kth.py

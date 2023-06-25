@@ -9,7 +9,7 @@ Code Challenge: Class 07
 
 ## Whiteboard Process
 Image
-![CodeChallenge07](<python/401CodeChallenge/CodeChallenge07/Screenshot 2023-06-21 172727.png>)
+![CodeChallenge07](<Screenshot 2023-06-21 172727.png>)
 
 ## Approach & Efficiency
 Time: o(n)

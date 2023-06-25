@@ -1,3 +1,5 @@
+# from data_structures.linked_list import TargetError
+
 class Node:
     def __init__(self, value, _next=None):
         self.value = value
@@ -130,10 +132,16 @@ class LinkedList:
 # Putting in exception here fixes the error:
 #TypeError: expected exception must be a BaseException type, not TargetError
 class TargetError(Exception):
+    pass
+
+    # try:
+    #   raise TargetError("This specific error")
+    # except TargetError as e:
+    #   print(f"Caught TargetError: {e}")
 
 
 
-  if __name__ == '__main__':
+if __name__ == '__main__':
     node1 = Node(1)
     node2 = Node(2, node1)
     # [2] -> [1] -> None
