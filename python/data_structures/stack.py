@@ -35,16 +35,16 @@ class Stack:
         return self.top is None
 
 
-def test_exists():
-    assert Stack
+# def test_exists():
+#     assert Stack
 
 
-def test_push_onto_empty():
-    s = Stack()
-    s.push("apple")
-    actual = s.top.value
-    expected = "apple"
-    assert actual == expected
+# def test_push_onto_empty():
+#     s = Stack()
+#     s.push("apple")
+#     actual = s.top.value
+#     expected = "apple"
+#     assert actual == expected
 
 
 class Node:

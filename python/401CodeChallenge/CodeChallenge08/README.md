@@ -11,7 +11,7 @@ Code Challenge: Class 08
 
 ## Whiteboard Process
 Image
-![CodeChallenge07](python/401CodeChallenge/CodeChallenge08/Screenshot 2023-06-22 211750.png)
+![CodeChallenge07](<Screenshot 2023-06-22 211750.png>)
 
 ## Approach & Efficiency
 Time: o(n)
