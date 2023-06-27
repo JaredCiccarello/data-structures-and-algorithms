@@ -17,3 +17,5 @@ Space: o(n)
 ## Solution
 run pytest
  from tests/Code_Challenge/test_stack_queue.pseudo.py
+
+python/code_challenges/stack_queue_pseudo.py
