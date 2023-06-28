@@ -5,7 +5,7 @@ class Queue:
 
     # The constructor initializes the queue.
 
-    def __init__(self, ):
+    def __init__(self):
         # The front pointer points to the first node in the queue.
         self.front = None
         # The rear pointer points to the last node in the queue.

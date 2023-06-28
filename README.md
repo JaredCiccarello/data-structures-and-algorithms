@@ -9,3 +9,4 @@ TABLE OF CONTENTS:
 ## [CodeChallenge08](python/401CodeChallenge/CodeChallenge08/README.md)
 ## [CodeChallenge10](python/401CodeChallenge/CodeChallenge10/README.md)
 ## [CodeChallenge11](python/401CodeChallenge/CodeChallenge11/README.md)
+## [CodeChallenge12](python/401CodeChallenge/CodeChallenge12/README.md)

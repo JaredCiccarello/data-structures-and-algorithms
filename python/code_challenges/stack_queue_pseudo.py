@@ -30,6 +30,8 @@ class PseudoQueue:
             return self.enqueue_stack.is_empty() and self.dequeue_stack.is_empty()
 
 
+# Need to have a way to move enqueue_stack back to dequeue_stack
+
 
 
 
