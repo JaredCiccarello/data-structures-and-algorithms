@@ -18,35 +18,42 @@ class Animal:
 
 class AnimalShelter:
   def __init__(self):
-     self.dogs = Queue()
-     self.cats = Queue()
+     self.queue = Queue()
+    #  self.dogs = Queue()
+    #  self.cats = Queue()
 
-# We take an animal, and then add them to individual queues
+  #   #super calls the parents class constructor
+  #   super().__init__("dog")
+# Dog and cat is an object, not need two queue. TOO EASY
+
+# We take an animal, and then add them to individual queue
   def enqueue(self, animal):
-     if animal.species == "dog":
-        self.dogs.enqueue(animal)
-     elif animal.species == "cat":
-        self.cats.enqueue(animal)
-     else:
-        return "Not a dog or cat"
+     self.queue.enqueue(animal)
+
 
   def dequeue(self, pref):
-     if pref == 'dog':
-        return self.dogs.dequeue()
-     elif pref == 'cat':
-        return self.cats.dequeue()
+     if pref != "dog" and pref != "cat":
+        return None
      else:
+        while self.queue.front:
+           if self.queue.front.value.species==pref:
+              return self.queue.dequeue()
+           else:
+              self.queue.enqueue(self.queue.dequeue())
         return None
 
-class Dog(Animal):
-  #Test2 will not pass without name equal to string
-  def __init__(self, name=''):
-    #super calls the parents class constructor
-    super().__init__("dog", name)
+    #  if pref == 'dog':
+    #     return self.dogs.dequeue()
+    #  elif pref == 'cat':
+    #     return self.cats.dequeue()
+    #  else:
+    #     return None
 
 
-class Cat(Animal):
-  #Test1 will not pass without name equal to string
-  def __init__(self, name=''):
-    #super calls the parents class constructor
-    super().__init__("cat", name)
+class Dog:
+  def __init__(self):
+      self.species = "dog"
+
+class Cat:
+  def __init__(self):
+   self.species = "cat"
