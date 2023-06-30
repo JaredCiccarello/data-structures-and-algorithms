@@ -11,7 +11,7 @@ Sarah Glass
 Code Challenge: Class 12
 
 ## Whiteboard Process
-![CodeChallenge07](<Screenshot 2023-06-28 210331.png>)
+![CodeChallenge13](<Screenshot 2023-06-28 210331.png>)
 
 ## Approach & Efficiency
 Time: o(n)
