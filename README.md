@@ -11,3 +11,5 @@ TABLE OF CONTENTS:
 ## [CodeChallenge11](python/401CodeChallenge/CodeChallenge11/README.md)
 
 ## [CodeChallenge12](python/401CodeChallenge/CodeChallenge12/README.md)
+## [CodeChallenge13](python/401CodeChallenge/CodeChallenge13/README.md)
+## [CodeChallenge15](python/401CodeChallenge/CodeChallenge15/README.md)

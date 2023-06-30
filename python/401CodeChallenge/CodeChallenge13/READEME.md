@@ -1,3 +1,6 @@
+https://geekflare.com/valid-parentheses-checking-python/
+
+
 Collaborators
 Andrew Carroll
 Anthony Sinitsa
@@ -8,7 +11,7 @@ Sarah Glass
 Code Challenge: Class 12
 
 ## Whiteboard Process
-![CodeChallenge12](<Screenshot 2023-06-27 181538.png>)
+![CodeChallenge13](<Screenshot 2023-06-28 210331.png>)
 
 ## Approach & Efficiency
 Time: o(n)
