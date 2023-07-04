@@ -5,23 +5,6 @@ class BinaryTree:
     Put docstring here
     """
 
-    def __init__(self):
-        # initialization here
-        pass
-
-    def some_method(self):
-        # method body here
-        pass
-
-
-class Node:
-    def __init__(self, value, left=None, right=None):
-        self.value = value
-        self.left = left
-        self.right = right
-
-
-
     def pre_order(self, values=[]):
         def walk(input_node, value_list):
             if not input_node:
@@ -54,3 +37,21 @@ class Node:
 
         walk(self.root, values)
         return values
+
+    def find_maximum_value(self):
+
+        max_value = -1
+        node = self.root
+        while node:
+            if node.value > max_value:
+                max_value = node.value
+                node = node.left
+                
+        return max_value
+
+class Node:
+    def __init__(self, value, left=None, right=None):
+        self.value = value
+        self.left = left
+        self.right = right
+
