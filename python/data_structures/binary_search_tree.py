@@ -1,12 +1,12 @@
 from data_structures.binary_tree import BinaryTree
 from data_structures.binary_tree import Node
 
-
-
 class BinarySearchTree(BinaryTree):
     """
-    Put docstring here
+    provide operations to create, manipulate, and search a binary search tree.
     """
+    def __init__(self, root=None):
+      self.root = root
 
     def __init__(self):
         # initialization here
@@ -16,8 +16,8 @@ class BinarySearchTree(BinaryTree):
 
     def add(self, value):
       """
-        Adds a new node with the given value to the binary search tree.
-        """
+      Adds a new node with the given value to the binary search tree.
+      """
       if self.root is None:
             self.root = Node(value)
       else:
@@ -57,8 +57,3 @@ class BinarySearchTree(BinaryTree):
             return self._contains_recursive(node.left, value)
         else:
             return self._contains_recursive(node.right, value)
-
-
-    def some_method(self):
-        # method body here
-        pass
