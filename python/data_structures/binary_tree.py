@@ -2,8 +2,10 @@ class BinaryTree:
     def __init__(self, root=None):
         self.root = root
     """
-    Put docstring here
+   create methods in order to traverse and manipulate through the binarySearchTree.
     """
+    def __init__(self, root=None):
+      self.root = root
 
     def pre_order(self, values=[]):
         def walk(input_node, value_list):
@@ -39,14 +41,13 @@ class BinaryTree:
         return values
 
     def find_maximum_value(self):
-
         max_value = -1
         node = self.root
         while node:
             if node.value > max_value:
                 max_value = node.value
                 node = node.left
-                
+
         return max_value
 
 class Node:
