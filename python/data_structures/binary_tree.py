@@ -38,16 +38,36 @@ class BinaryTree:
         walk(self.root, values)
         return values
 
-    def find_maximum_value(self):
 
-        max_value = -1
-        node = self.root
-        while node:
-            if node.value > max_value:
-                max_value = node.value
-                node = node.left
-                
-        return max_value
+    # def find_maximum_value(self):
+    #     if self.root is None:
+    #         return None
+
+    #     max_value = -1
+    #     node = self.root
+    #     while node:
+    #         if node.value > max_value:
+    #             max_value = node.value
+    #             node = node.left
+
+    #     return max_value
+
+    def find_maximum_value(self):
+        if self.root is None:
+            return None
+
+        def traverse(node):
+            if node is None:
+                # inf stands for negativity infinity.
+                # this allows 
+                return float('-inf')
+
+            left_max = traverse(node.left)
+            right_max = traverse(node.right)
+
+            return max(node.value, left_max, right_max)
+
+        return traverse(self.root)
 
 class Node:
     def __init__(self, value, left=None, right=None):
