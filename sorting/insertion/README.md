@@ -99,6 +99,3 @@ We take the value of 15 and compare it to the values of 4, 8, 16, 23 and 42. Thi
 
 This completes our iteration cycle.
 
-
-Prequesites:
-You'll need
