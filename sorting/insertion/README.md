@@ -1,84 +1,101 @@
 # Blog Notes: Insertion Sort
-Merge Sort!
 
-What is it? Put simply, it's a sorting algorithm, that divides an array in smaller arrays until it can no longer be divided. It then sorts each subarray and merges them back together to form a sorted array.
+<!-- https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-05/resources/singly_linked_list.html
+Linked List article is a good example -->
 
-This algorithm is considered recursive because it continously splits until it can divide no further.
+<!-- [8,4,23,42,16,15] -->
 
-How does it work? I'm glad you asked!
-
-First we want to document our space and time complexity.
-Space: O(n)
-Time: O(n)
-
-Next we identify our array.
-
-Now we can get started with our algorithm.
-We start by writing a function of MergeSort, passing in the arr or array for short.
-
-We declare a variable of n to be the arr.length or the length of the array. n = arr.length
-
-Here we set a condition, if n > 1. Here we are saying that if n is greater than 1 do something.
-
-In this case, if n is greater than 1 we want it to DECLARE. Declare in this case is a placeholder as a way to indicate the creation of variables.
-
-We assign the middle of array to be n/2
-Left is 0 to mid
-Right is mid to n
-
-Here we are assigning the different sections of our array and then sorting them.
-
-First we sort left, then right, and then merge them together using left, right, arr.
-
-We declare individual variables for i, j, and k to help create our next while loop.
-
-Inside of our while loop we define our variables where i less than the left.length and j is less than the right.length.
-
-After assigning the value to the merged array, k is incremented by 1 to move to the next position in the merged array.
-
-Once the while loop finishes, it means either the left or the right array has been completely processed. If i has reached the length of the left array, it means all elements from the left array have been merged into the merged array. In this case, the remaining elements in the right array are appended to the merged array (arr).
-
-Conversely, if i is not equal to the length of the left array, it means all elements from the right array have been merged, and the remaining elements in the left array are appended to the merged array (arr).
-
-Finally, the Merge function completes, and the merged array (arr) is returned.
+This is what insertionSort is, and why it's important to use this method.
 
 
-  Visual:
-We start with our array
-[8,4,23,42,16,15]
-This array length is greater than 1.
-We declare the mid index at n/2
-
-[8,4,23] [42,16,15]
-
-[8,4,23]
-
-This array is still greater than 1.
-
-[8] [4,23]
-
-[4,23]
-This array is sorted further into
-[4] and [23]
-
-This subarray is then merged.
-
-[4, 23]
+Big O
+time: O(n)
+space:O(1)
 
 
- [42,16,15]
+So how does the algorithm work?
 
-This array is still greater than 1.
+For the Insert
 
-[42] [16,15]
+Step 1
+You have an internal 'insert' method being used to push data into your int array, which is also using a method to sort the information.
 
-[16,15]
-This array is sorted further into
-[16] and [15]
+Step2
+You have an int short for integer value which takes in a value and is then manipulated.
 
-This subarray is then merged.
-[16, 15]
+Step3
+You start with your i, which is being set to 0 so that your i has a basic value.
 
-Then both subarrays are merged and sorted
+Step4
+Then take your while loop so that your function is being iterated over multiple times.
 
+Step5
+Next we create our value > sorted[i] which means the value must be greater than the sorted i value.
+
+Step6
+We want our i value to continue to increase by + 1
+
+Step7
+Next, we are using a for loop to find if your i value is less than the sorted value.length, meaning if the length of the integers have no values that are greater than the i value. Once we exit the loop we append to the end of the sorted array.
+
+
+For the InsertionSort
+
+Step 1
+The code begins by defining a function named "InsertionSort" that takes an input array as a parameter. It also initializes a new empty array called "sorted" to store the sorted elements.
+
+Step 2
+The first element of the input array (input[0]) is assigned to the first position in the sorted array (sorted[0]). This is because a single element is always considered sorted.
+
+Step 3
+The code enters a loop that starts from the second element of the input array (input[1]) and iterates up to the length of the input array.
+
+Step 4
+Inside the loop, the "Insert" function is called, passing in the sorted array and the current element of the input array (input[i]). This function is responsible for inserting the current element into its correct position in the sorted array.
+
+Step 5
+The Insert function is not explicitly defined in the given code, but it is assumed to be a separate function that performs the insertion operation. The purpose of this function is to find the correct position in the sorted array to insert the current element. It shifts elements in the sorted array to the right until it finds the appropriate position for insertion.
+
+Step 6
+To find the correct position, the Insert function compares the current element with each element in the sorted array from right to left. If an element in the sorted array is greater than the current element, it is shifted one position to the right to make space for the insertion.
+
+Step 7
+Once the correct position is found, the current element is inserted into the sorted array at the appropriate index.
+
+Step 8
+The loop continues until all elements in the input array have been processed and inserted into the sorted array.
+
+Step 9
+After the loop completes, the function returns the sorted array.
+
+
+
+Let's do a stepthrough of this code.
+
+This is the array
+[8, 4, 23, 42, 16, 15]
+
+This is the array sorted
 [4, 8, 15, 16, 23, 42]
+
+
+We take 8 and iterate through it.
+
+First iteration
+
+Next we take the next value of 4 and compare. [8, 4] becomes [4, 8]
+
+Second iteration
+We take the value of 23 and compare it to the values of 4 and 8. This becomes [4, 8, 23]
+
+Third iteration
+We take the value of 42 and compare it to the values of 4, 8, and 23. This becomes [4, 8, 23, 42]
+
+Fourth iteration
+We take the value of 16 and compare it to the values of 4, 8, 23 and 42. This becomes [4, 8, 16, 23, 42]
+
+Fifth iteration
+We take the value of 15 and compare it to the values of 4, 8, 16, 23 and 42. This becomes [4, 8, 15, 16, 23, 42]
+
+This completes our iteration cycle.
+
