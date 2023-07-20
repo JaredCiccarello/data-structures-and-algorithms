@@ -2,7 +2,14 @@
 
 ## Language: `Python`
 
-
+Collaborators:
+Anthony Sinitsa
+Logan Reese
+Sarah Glass
+Dan Quinn
+ChatGPT
+Tammy Do
+Brandon Mizutani
 
 TABLE OF CONTENTS:
 
