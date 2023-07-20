@@ -16,3 +16,6 @@ TABLE OF CONTENTS:
 ## [CodeChallenge16](python/401CodeChallenge/CodeChallenge16/README.md)
 ## [CodeChallenge17](python/401CodeChallenge/CodeChallenge17/README.md)
 ## [CodeChallenge18](python/401CodeChallenge/CodeChallenge18/README.md)
+
+## [CodeChallenge26](sorting/insertion/README.md)
+## [CodeChallenge27](sorting/merge/README.md)
