@@ -20,3 +20,4 @@ TABLE OF CONTENTS:
 ## [CodeChallenge26](sorting/insertion/README.md)
 ## [CodeChallenge27](sorting/merge/README.md)
 ## [CodeChallenge28](sorting/comparisons/README.md)
+## [CodeChallenge30](python/401CodeChallenge/CodeChallenge30/README.md)

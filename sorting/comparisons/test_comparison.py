@@ -2,11 +2,6 @@ import pytest
 import sys
 import os
 
-# Add the parent directory of the tests package to the Python path
-current_directory = os.path.dirname(os.path.realpath(__file__))
-parent_directory = os.path.dirname(current_directory)
-sys.path.append(parent_directory)
-
 # Now you can import the sorting module
 from sorting.comparisons.comparison_sort import sort_movies_by_most_recent_year, sort_movies_alphabetically_by_title
 
