@@ -21,3 +21,5 @@ TABLE OF CONTENTS:
 ## [CodeChallenge27](sorting/merge/README.md)
 ## [CodeChallenge28](sorting/comparisons/README.md)
 ## [CodeChallenge30](python/401CodeChallenge/CodeChallenge30/README.md)
+## [CodeChallenge31](python/401CodeChallenge/CodeChallenge31/README.md)
+## [CodeChallenge32](python/401CodeChallenge/CodeChallenge32/README.md)
