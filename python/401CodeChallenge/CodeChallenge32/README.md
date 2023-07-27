@@ -4,7 +4,7 @@ Logan Reese
 Sarah Glass
 
 # Challenge Title
-Code Challenge: Class 31
+Code Challenge: Class 32
 
 ## Whiteboard Process
 ## [CodeChallenge32](!Screenshot 2023-07-25 200552.png)
