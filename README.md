@@ -23,3 +23,4 @@ TABLE OF CONTENTS:
 ## [CodeChallenge30](python/401CodeChallenge/CodeChallenge30/README.md)
 ## [CodeChallenge31](python/401CodeChallenge/CodeChallenge31/README.md)
 ## [CodeChallenge32](python/401CodeChallenge/CodeChallenge32/README.md)
+## [CodeChallenge33](python/401CodeChallenge/CodeChallenge33/README.md)
